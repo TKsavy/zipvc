@@ -1,2 +1,3 @@
-# zipvc
-Project page for ZipVC
+# ZipVC
+
+The official project page for **ZipVC**.

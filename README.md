@@ -1,3 +1,4 @@
-# ZipVC
+# ZipVC project page
 
-The official project page for **ZipVC**.
+Audio samples for **ZipVC: Efficient Zero-Shot Voice Conversion with Speaker-Style Transfer via Flow Matching**.
+

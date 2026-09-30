@@ -1,0 +1,358 @@
+{
+  "title": "ZipVC: Efficient Zero-Shot Voice Conversion with Speaker-Style Transfer via Flow Matching",
+  "selection": "Two distinct pairs per dataset, randomly selected once during preparation.",
+  "datasets": [
+    {
+      "id": "librispeech_pc",
+      "name": "Librispeec-PC test",
+      "samples": [
+        {
+          "sample_id": "librispeech_pc_003",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_003/source.wav",
+            "transcript": "In autumn the wood cutters always came and felled some of the largest trees."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_003/target.wav",
+            "transcript": "Robin was glad when, at length, they were left to their own devices."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/librispeech_pc/librispeech_pc_003/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "librispeech_pc_001",
+          "source": {
+            "audio": "audio/librispeech_pc/librispeech_pc_001/source.wav",
+            "transcript": "Women can hide their pain better than we men, and bear it better, too, except when shame drops fire into the dreadful chalice."
+          },
+          "reference": {
+            "audio": "audio/librispeech_pc/librispeech_pc_001/target.wav",
+            "transcript": "Robin was glad when, at length, they were left to their own devices."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/librispeech_pc/librispeech_pc_001/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seedtts",
+      "name": "SeedTTS",
+      "samples": [
+        {
+          "sample_id": "seedtts_001",
+          "source": {
+            "audio": "audio/seedtts/seedtts_001/source.wav",
+            "transcript": "When you're at a party and somebody says \"banana bread\", a sniper might be near you."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_001/target.wav",
+            "transcript": "Not specifically no, he only gave me the gist of his research the one time I spoke to him."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/seedtts/seedtts_001/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/seedtts/seedtts_001/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/seedtts/seedtts_001/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/seedtts/seedtts_001/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/seedtts/seedtts_001/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/seedtts/seedtts_001/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/seedtts/seedtts_001/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "seedtts_004",
+          "source": {
+            "audio": "audio/seedtts/seedtts_004/source.wav",
+            "transcript": "He relocated to Bentonville, Arkansas, where he worked for Wal-Mart as a fitness trainer."
+          },
+          "reference": {
+            "audio": "audio/seedtts/seedtts_004/target.wav",
+            "transcript": "Henry's return to the throne lasted less than six months."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/seedtts/seedtts_004/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/seedtts/seedtts_004/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/seedtts/seedtts_004/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/seedtts/seedtts_004/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/seedtts/seedtts_004/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/seedtts/seedtts_004/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/seedtts/seedtts_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L2arctic",
+      "name": "L2Arctic",
+      "samples": [
+        {
+          "sample_id": "L2arctic_002",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_002/source.wav",
+            "transcript": "Exciting times are the lot of the fish patrol"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_002/target.wav",
+            "transcript": "Behind him lay the thousand years long road across all Siberia and Russia"
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/L2arctic/L2arctic_002/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/L2arctic/L2arctic_002/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/L2arctic/L2arctic_002/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/L2arctic/L2arctic_002/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/L2arctic/L2arctic_002/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/L2arctic/L2arctic_002/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/L2arctic/L2arctic_002/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "L2arctic_004",
+          "source": {
+            "audio": "audio/L2arctic/L2arctic_004/source.wav",
+            "transcript": "So we have to fit the boat throughout with oil lamps as well"
+          },
+          "reference": {
+            "audio": "audio/L2arctic/L2arctic_004/target.wav",
+            "transcript": "Thus had the raw wilderness prepared him for this day"
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/L2arctic/L2arctic_004/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/L2arctic/L2arctic_004/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/L2arctic/L2arctic_004/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/L2arctic/L2arctic_004/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/L2arctic/L2arctic_004/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/L2arctic/L2arctic_004/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/L2arctic/L2arctic_004/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "esd",
+      "name": "ESD",
+      "samples": [
+        {
+          "sample_id": "esd_004",
+          "source": {
+            "audio": "audio/esd/esd_004/source.wav",
+            "transcript": "The name really is the aged aged man."
+          },
+          "reference": {
+            "audio": "audio/esd/esd_004/target.wav",
+            "transcript": "What are you waiting for? man."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/esd/esd_004/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/esd/esd_004/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/esd/esd_004/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/esd/esd_004/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/esd/esd_004/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/esd/esd_004/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/esd/esd_004/zipvc.wav"
+            }
+          ]
+        },
+        {
+          "sample_id": "esd_002",
+          "source": {
+            "audio": "audio/esd/esd_002/source.wav",
+            "transcript": "No admittance except on party business."
+          },
+          "reference": {
+            "audio": "audio/esd/esd_002/target.wav",
+            "transcript": "But things haven't change yet."
+          },
+          "systems": [
+            {
+              "label": "FreeVC",
+              "audio": "audio/esd/esd_002/freevc.wav"
+            },
+            {
+              "label": "FACodec",
+              "audio": "audio/esd/esd_002/facodec.wav"
+            },
+            {
+              "label": "ExVC",
+              "audio": "audio/esd/esd_002/exvc.wav"
+            },
+            {
+              "label": "HierSpeech++",
+              "audio": "audio/esd/esd_002/hierspeech.wav"
+            },
+            {
+              "label": "Vevo-Timbre",
+              "audio": "audio/esd/esd_002/vevotimbre.wav"
+            },
+            {
+              "label": "Vevo-Voice",
+              "audio": "audio/esd/esd_002/vevovoice.wav"
+            },
+            {
+              "label": "ZipVC (Ours)",
+              "audio": "audio/esd/esd_002/zipvc.wav"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
